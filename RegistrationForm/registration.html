@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .gender-group {
+            text-align: left;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form action="displayinfo.php" method="POST">
+        <h1>Registration Form</h1>
+        <label for="fname">Name</label>
+        <input type="text" name="myname" id="fname">
+        <label for="femail">Email</label>
+        <input type="email" name="myemail" id="femail">
+        <label for="ID">ID</label>
+        <input type="number" name="myID" id="ID">
+        <label for="phone">Phone</label>
+        <input type="number" name="myphone" id="phone">
+        <div class="gender-group">
+            <label>Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male" style="display: inline;">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female" style="display: inline;">Female</label>
+        </div>
+        <label for="city">Choose the city:</label>
+        <select id="city" name="city">
+            <option value="Dhaka">Dhaka</option>
+            <option value="Khulna">Khulna</option>
+            <option value="chittagong">Chittagong</option>
+            <option value="Rajshahi">Rajshahi</option>
+            <option value="Barishal">Barishal</option>
+            <option value="Rangpur">Rangpur</option>
+            <option value="Mymensingh">Mymensingh</option>
+            <option value="Others">Others</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
