@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple CGPA Calculator</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 20px;
+            font-family: Arial;
+        }
+        button {
+            padding: 10px;
+            margin: 10px;
+            background: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        select, input {
+            margin: 5px;
+            padding: 5px;
+        }
+        div {
+            margin: 10px;
+        }
+        form {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>CGPA Calculator</h1>
+
+    <!-- Step 1: Ask for number of courses -->
+    <div id="step1">
+        <h3>Enter number of courses:</h3>
+        <input type="number" id="numCourses" min="1" max="15" value="1">
+        <button type="button" onclick="showCourseInputs()">Next</button>
+    </div>
+
+    <!-- Step 2: Course inputs form -->
+    <form id="courseForm" action="display_cgpa.php" method="POST">
+        <input type="hidden" id="courseCount" name="courseCount">
+        <div id="courseInputs"></div>
+        <button type="submit">Calculate CGPA</button>
+    </form>
+
+    <script>
+        function showCourseInputs() {
+            let n = document.getElementById('numCourses').value;
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('courseForm').style.display = 'block';
+            document.getElementById('courseCount').value = n;
+            
+            let html = '';
+            for(let i = 1; i <= n; i++) {
+                html += `
+                    <div>
+                        <h3>Course ${i}</h3>
+                        Grade: 
+                        <select name="grade${i}">
+                            <option value="4.00">A+ (4.00)</option>
+                            <option value="3.75">A (3.75)</option>
+                            <option value="3.50">A- (3.50)</option>
+                            <option value="3.25">B+ (3.25)</option>
+                            <option value="3.00">B (3.00)</option>
+                            <option value="2.75">B- (2.75)</option>
+                            <option value="2.50">C+ (2.50)</option>
+                            <option value="2.25">C (2.25)</option>
+                            <option value="2.00">D (2.00)</option>
+                            <option value="0.00">F (0.00)</option>
+                        </select>
+                        Credit: 
+                        <select name="credit${i}">
+                            <option value="0.75">0.75</option>
+                            <option value="1">1.00</option>
+                            <option value="1.5">1.50</option>
+                            <option value="2">2.00</option>
+                            <option value="3">3.00</option>
+                            <option value="4">4.00</option>
+                        </select>
+                    </div>
+                `;
+            }
+            document.getElementById('courseInputs').innerHTML = html;
+        }
+    </script>
+</body>
+</html>
