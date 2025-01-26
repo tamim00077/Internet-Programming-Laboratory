@@ -2,6 +2,7 @@
 
 ## Project Overview
 This project is a basic web-based CGPA (Cumulative Grade Point Average) calculator system developed as part of the Internet Programming Laboratory course at my university. It provides a simple interface for students to calculate their CGPA based on course grades and credits.
+![CGPA Calculator Preview](https://github.com/tamim00077/Internet-Programming-Laboratory/blob/eff899b6cae4c866b159b354d0fc4e058b0013ed/CgpaCalculator/cgpa_calculator_workflow.png)
 
 ## Grading System
 The following table outlines the grading system used by North Westren University, Khulna:
@@ -43,9 +44,10 @@ The following table outlines the grading system used by North Westren University
 
 ## Project Structure
 ```
-├── cgpa_calculator.html    # Main calculator form
-├── display_cgpa.php        # Result display page
-└── README.md              # Project documentation
+├── cgpa_calculator.html             # Main calculator form
+├── cgpa_calculator_workflow.png     # Visual Representation
+├── display_cgpa.php                 # Result display page
+└── README.md                        # Project documentation
 ```
 
 ## Installation and Setup
@@ -67,6 +69,8 @@ git clone [your-repository-url]
    * Select the grade obtained (A+ to F)
    * Choose the credit hours (0.75 to 4.00)
 4. Click "Calculate CGPA" to view your results
+
+
 
 ## Learning Objectives
 This project demonstrates understanding of:
