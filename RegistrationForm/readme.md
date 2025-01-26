@@ -3,6 +3,8 @@
 ## Project Overview
 This project is a basic web-based registration form system developed as part of the Internet Programming Laboratory course at my university. It demonstrates the implementation of fundamental web development concepts including HTML, CSS, and PHP form handling.
 
+![Registration Form Preview](https://github.com/tamim00077/Internet-Programming-Laboratory/blob/983c9bb87d8e4a0cee6ac128182f2503576b4e70/RegistrationForm/registration_form_workflow.png)
+
 ## Features
 - User-friendly registration interface
 - Input fields for:
@@ -22,9 +24,10 @@ This project is a basic web-based registration form system developed as part of 
 
 ## Project Structure
 ```
-├── registration.html    # Main registration form
-├── displayinfo.php     # Form data display page
-└── README.md          # Project documentation
+├── registration.html                 # Main registration form
+├── displayinfo.php                   # Form data display page
+└── README.md                         # Project documentation
+└── registration_form_workflow.png    #Visual Representation
 ```
 
 ## Installation and Setup
