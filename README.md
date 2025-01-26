@@ -9,6 +9,8 @@ This repository contains projects developed as part of the Internet Programming 
 ### 1. Registration Form System
 A web-based registration system that allows users to input and submit personal information through a form interface.
 
+![Registration Form Preview](https://github.com/tamim00077/Internet-Programming-Laboratory/blob/983c9bb87d8e4a0cee6ac128182f2503576b4e70/RegistrationForm/registration_form_workflow.png)
+
 **Key Features:**
 - User information collection
 - Form data validation
@@ -19,6 +21,8 @@ A web-based registration system that allows users to input and submit personal i
 
 ### 2. CGPA Calculator
 A web application that helps students calculate their Cumulative Grade Point Average (CGPA) based on course grades and credits.
+
+![CGPA Calculator Preview](https://github.com/tamim00077/Internet-Programming-Laboratory/blob/eff899b6cae4c866b159b354d0fc4e058b0013ed/CgpaCalculator/cgpa_calculator_workflow.png)
 
 **Key Features:**
 - Dynamic course input
@@ -32,12 +36,14 @@ A web application that helps students calculate their Cumulative Grade Point Ave
 ```
 ├── cgpa-calculator/
 │   ├── cgpa_calculator.html
+│   ├── cgpa_calculator_workflow.png
 │   ├── display_cgpa.php
-│   └── README.md
+│   └── readme.md
 ├── registration-form/
 │   ├── registration.html
 │   ├── displayinfo.php
-│   └── README.md
+│   └── readme.md
+│   └── registration_form_workflow.png
 └── README.md
 ```
 
@@ -75,6 +81,7 @@ C:\xampp\htdocs\internet-programming-laboratory
 4. Access the projects:
 - Registration Form: `http://localhost/internet-programming-laboratory/registration-form/registration.html`
 - CGPA Calculator: `http://localhost/internet-programming-laboratory/cgpa-calculator/cgpa_calculator.html`
+
 
 ## Course Information
 - **Course**: Internet Programming Laboratory
